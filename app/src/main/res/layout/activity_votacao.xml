@@ -59,7 +59,7 @@
                         android:id="@+id/votosDembele"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Dembélé: 0 // 0%"
+                        android:text=""
                         android:textColor="#FFFFFF"
                         android:textSize="16sp"
                         android:layout_marginTop="8dp"/>
@@ -68,7 +68,7 @@
                         android:id="@+id/votosYamal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Yamal: 0 // 0%"
+                        android:text=""
                         android:textColor="#FFFFFF"
                         android:textSize="16sp"
                         android:layout_marginTop="4dp"/>
@@ -77,7 +77,7 @@
                         android:id="@+id/votosVitinha"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Vitinha: 0 // 0%"
+                        android:text=""
                         android:textColor="#FFFFFF"
                         android:textSize="16sp"
                         android:layout_marginTop="4dp"/>
@@ -86,7 +86,7 @@
                         android:id="@+id/votosRaphinha"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Raphinha: 0 // 0%"
+                        android:text=""
                         android:textColor="#FFFFFF"
                         android:textSize="16sp"
                         android:layout_marginTop="4dp"/>
@@ -95,7 +95,7 @@
                         android:id="@+id/votosSalah"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Salah: 0 // 0%"
+                        android:text=""
                         android:textColor="#FFFFFF"
                         android:textSize="16sp"
                         android:layout_marginTop="4dp"/>
@@ -104,7 +104,7 @@
                         android:id="@+id/votosBranco"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Brancos: 0 // 0%"
+                        android:text=""
                         android:textColor="#FFFFFF"
                         android:textSize="16sp"
                         android:layout_marginTop="12dp"/>
@@ -113,7 +113,7 @@
                         android:id="@+id/votosNulo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Nulos: 0 // 0%"
+                        android:text=""
                         android:textColor="#FFFFFF"
                         android:textSize="16sp"
                         android:layout_marginTop="4dp"/>
@@ -122,7 +122,7 @@
                         android:id="@+id/totalVotos"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Total de votos: 0"
+                        android:text="Nenhum voto contabilizado"
                         android:textColor="#F2E7AA"
                         android:textSize="16sp"
                         android:layout_marginTop="12dp"

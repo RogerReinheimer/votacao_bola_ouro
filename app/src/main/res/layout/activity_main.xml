@@ -54,8 +54,8 @@
                     android:padding="8dp">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="117dp"
+                        android:layout_width="120dp"
+                        android:layout_height="143dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/yamal" />
 
@@ -93,8 +93,8 @@
                     android:padding="8dp">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="117dp"
+                        android:layout_width="120dp"
+                        android:layout_height="143dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/dembele" />
 
@@ -131,8 +131,8 @@
                     android:padding="8dp">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="117dp"
+                        android:layout_width="120dp"
+                        android:layout_height="143dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/raphinha" />
 
