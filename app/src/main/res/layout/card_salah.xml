@@ -1,0 +1,60 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="12dp"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="6dp"
+    card_view:cardBackgroundColor="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/card_jogador"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/imagem"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/salah" />
+
+        <TextView
+            android:id="@+id/nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imagem"
+            android:layout_marginStart="22dp"
+            android:text="Mohamed Salah"
+            android:textColor="#F2E7AA"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/estatisticas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nome"
+            android:layout_toEndOf="@id/imagem"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="22dp"
+            android:text="    • Liverpool •\n\nGols: 36\nAssistências: 24\n"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnVotoSalah"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#F2E7AA"
+            android:text="VOTAR"
+            android:textColor="#181D26"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

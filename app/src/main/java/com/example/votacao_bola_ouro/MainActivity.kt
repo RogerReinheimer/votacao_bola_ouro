@@ -2,10 +2,10 @@ package com.example.votacao_bola_ouro
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.AppCompatButton
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -20,25 +20,23 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        /*
-        val btnVote = findViewById<AppCompatButton>(R.id.btnVote)
+        val btnVote = findViewById<Button>(R.id.btnVotar)
         btnVote.setOnClickListener {
-            val intent = Intent(this, OutraLayoutAqui1::class.java)
+            val intent = Intent(this, votacao::class.java)
             startActivity(intent)
         }
 
         val bnVote = findViewById<LinearLayout>(R.id.bnVote)
         bnVote.setOnClickListener {
-            val intent = Intent(this, OutroLayoutAqui1::class.java)
+            val intent = Intent(this, votacao::class.java)
             startActivity(intent)
         }
 
-        val bnSobre = findViewById<LinearLayout>(R.id.bnSobre)
+        /*val bnSobre = findViewById<LinearLayout>(R.id.bnSobre)
         bnSobre.setOnClickListener {
             val intent = Intent(this, OutroLayoutAqui2::class.java)
             startActivity(intent)
-        }
-        */
+        }*/
 
     }// fim oncreate
 }// fim codigo

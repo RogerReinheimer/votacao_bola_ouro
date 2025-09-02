@@ -4,7 +4,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0D0D0D">
+    android:background="#181D26">
 
     <LinearLayout
         android:id="@+id/main_content"
@@ -17,17 +17,18 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="111dp"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            app:tint="#F2E7AA"
             app:srcCompat="@drawable/logo" />
 
         <ImageView
-            android:layout_width="match_parent"
+            android:layout_width="264dp"
             android:layout_height="200dp"
-            android:contentDescription="Bola de Ouro"
             android:layout_marginTop="32dp"
             android:layout_marginBottom="12dp"
-            android:src="@drawable/bola_ouro" />
+            android:contentDescription="Bola de Ouro"
+            android:src="@drawable/trofeu" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -42,7 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="12dp"
-                app:cardBackgroundColor="#1A1A1A"
+                app:cardBackgroundColor="#202632"
                 android:layout_marginEnd="4dp">
 
                 <LinearLayout
@@ -62,7 +63,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Yamal"
-                        android:textColor="#FFD700"
+                        android:textColor="#F2E7AA"
                         android:textSize="14sp"
                         android:layout_marginTop="4dp" />
 
@@ -70,7 +71,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="10"
-                        android:textColor="#FFD700"
+                        android:textColor="#F2E7AA"
                         android:textSize="12sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -80,7 +81,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="12dp"
-                app:cardBackgroundColor="#1A1A1A"
+                app:cardBackgroundColor="#202632"
                 android:layout_marginStart="4dp"
                 android:layout_marginEnd="4dp">
 
@@ -101,7 +102,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Dembele"
-                        android:textColor="#FFD700"
+                        android:textColor="#F2E7AA"
                         android:textSize="14sp"
                         android:layout_marginTop="4dp" />
 
@@ -109,7 +110,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="10"
-                        android:textColor="#FFD700"
+                        android:textColor="#F2E7AA"
                         android:textSize="12sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -119,7 +120,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="12dp"
-                app:cardBackgroundColor="#1A1A1A"
+                app:cardBackgroundColor="#202632"
                 android:layout_marginStart="4dp">
 
                 <LinearLayout
@@ -139,7 +140,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Raphinha"
-                        android:textColor="#FFD700"
+                        android:textColor="#F2E7AA"
                         android:textSize="14sp"
                         android:layout_marginTop="4dp" />
 
@@ -147,23 +148,23 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="11"
-                        android:textColor="#FFD700"
+                        android:textColor="#F2E7AA"
                         android:textSize="12sp" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
-
         </LinearLayout>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnVote"
+        <Button
+            android:id="@+id/btnVotar"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:text="VOTE AGORA"
-            android:textSize="18dp"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:layout_marginTop="32dp"
-            android:background="@drawable/botao_gradiante" />
+            android:backgroundTint="#F2E7AA"
+            android:text="VOTAR AGORA"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#181D26"
+            android:textSize="16dp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -173,12 +174,11 @@
         android:layout_height="60dp"
         android:orientation="horizontal"
         android:gravity="center"
-        android:background="#1A1A1A"
+        android:background="#202632"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- home -->
         <LinearLayout
             android:id="@+id/bnHome"
             android:orientation="vertical"
@@ -193,17 +193,16 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/home"
-                app:tint="#FFD700" />
+                app:tint="#F2E7AA" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="HOME"
-                android:textColor="#FFD700"
+                android:textColor="#F2E7AA"
                 android:textSize="14sp"/>
         </LinearLayout>
 
-        <!-- vote -->
         <LinearLayout
             android:id="@+id/bnVote"
             android:orientation="vertical"
@@ -218,17 +217,16 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/voto"
-                app:tint="#FFD700" />
+                app:tint="#F2E7AA" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="VOTE"
-                android:textColor="#FFD700"
+                android:textColor="#F2E7AA"
                 android:textSize="14sp"/>
         </LinearLayout>
 
-        <!-- sobre -->
         <LinearLayout
             android:id="@+id/bnSobre"
             android:orientation="vertical"
@@ -243,13 +241,13 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/sobre"
-                app:tint="#FFD700" />
+                app:tint="#F2E7AA" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sobre"
-                android:textColor="#FFD700"
+                android:textColor="#F2E7AA"
                 android:textSize="14sp"/>
         </LinearLayout>
     </LinearLayout>

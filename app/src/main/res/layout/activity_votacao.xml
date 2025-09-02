@@ -1,0 +1,260 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181D26">
+
+    <ScrollView
+        android:id="@+id/scroll_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_nav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/main_content"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                app:tint="#F2E7AA"
+                app:srcCompat="@drawable/logo" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardResumoVotos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                app:cardBackgroundColor="#202632">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/tituloResumo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Resumo da Votação"
+                        android:textAlignment="center"
+                        android:textColor="#F2E7AA"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/votosDembele"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dembélé: 0 // 0%"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:id="@+id/votosYamal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yamal: 0 // 0%"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:layout_marginTop="4dp"/>
+
+                    <TextView
+                        android:id="@+id/votosVitinha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vitinha: 0 // 0%"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:layout_marginTop="4dp"/>
+
+                    <TextView
+                        android:id="@+id/votosRaphinha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Raphinha: 0 // 0%"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:layout_marginTop="4dp"/>
+
+                    <TextView
+                        android:id="@+id/votosSalah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Salah: 0 // 0%"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:layout_marginTop="4dp"/>
+
+                    <TextView
+                        android:id="@+id/votosBranco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Brancos: 0 // 0%"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:layout_marginTop="12dp"/>
+
+                    <TextView
+                        android:id="@+id/votosNulo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nulos: 0 // 0%"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:layout_marginTop="4dp"/>
+
+                    <TextView
+                        android:id="@+id/totalVotos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total de votos: 0"
+                        android:textColor="#F2E7AA"
+                        android:textSize="16sp"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/btnVotoBranco"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#F2E7AA"
+                    android:text="BRANCO"
+                    android:textColor="#181D26"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnVotoNulo"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#F2E7AA"
+                    android:text="NULO"
+                    android:textColor="#181D26"
+                    android:textStyle="bold"
+                    android:layout_marginStart="35dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/card_dembele"/>
+                <include layout="@layout/card_yamal"/>
+                <include layout="@layout/card_vitinha"/>
+                <include layout="@layout/card_raphinha"/>
+                <include layout="@layout/card_salah"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_nav"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#202632"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/bnHome"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/home"
+                app:tint="#F2E7AA" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOME"
+                android:textColor="#F2E7AA"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bnVote"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/voto"
+                app:tint="#F2E7AA" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VOTE"
+                android:textColor="#F2E7AA"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bnSobre"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/sobre"
+                app:tint="#F2E7AA" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sobre"
+                android:textColor="#F2E7AA"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
