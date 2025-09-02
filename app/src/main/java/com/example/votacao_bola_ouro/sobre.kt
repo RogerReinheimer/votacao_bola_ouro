@@ -9,20 +9,27 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivity : AppCompatActivity() {
+class sobre : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_sobre)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        val btnVote = findViewById<Button>(R.id.btnVotar)
-        btnVote.setOnClickListener {
-            val intent = Intent(this, votacao::class.java)
+        val btnSair: Button = findViewById(R.id.btnSair)
+
+        btnSair.setOnClickListener {
+            finishAffinity()
+            System.exit(0)
+        }
+
+        val bnHome = findViewById<LinearLayout>(R.id.bnHome)
+        bnHome.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
@@ -32,11 +39,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val bnSobre = findViewById<LinearLayout>(R.id.bnSobre)
-        bnSobre.setOnClickListener {
-            val intent = Intent(this, sobre::class.java)
-            startActivity(intent)
-        }
+    }//fim oncreate
 
-    }// fim oncreate
-}// fim codigo
+}//fim codigo

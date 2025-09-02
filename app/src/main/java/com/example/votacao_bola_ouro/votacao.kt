@@ -46,11 +46,11 @@ class votacao : AppCompatActivity() {
             startActivity(intent)
         }
 
-        /*val bnSobre = findViewById<LinearLayout>(R.id.bnSobre)
+        val bnSobre = findViewById<LinearLayout>(R.id.bnSobre)
         bnSobre.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, sobre::class.java)
             startActivity(intent)
-        } */
+        }
 
         // texto la no resumo
         votosDembeleText = findViewById(R.id.votosDembele)
